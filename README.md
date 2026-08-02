@@ -1,70 +1,183 @@
-# AI Question-Answering Chatbot: Python Doubt Solver & Code Mentor
+# 🤖 LangChain AI Python Assistant
 
-A terminal-based interactive chatbot built with **LangChain**, **Google Gemini API**, and **Rich**. It acts as an expert programming assistant, helping users resolve their Python programming doubts, debug errors, explain syntax, and learn optimization best practices.
+An intelligent terminal-based AI chatbot built using **LangChain**, **Google Gemini API**, and **Rich**. This chatbot acts as a Python programming mentor by answering coding questions, explaining concepts, debugging errors, and generating clean Python solutions through an interactive command-line interface.
 
-## Features
-- **LangChain Integration**: Utilizes modern LangChain architecture for model communication and prompt templating.
-- **Google Gemini API**: Powered by the fast and capable `gemini-1.5-flash` model.
-- **Premium Console UI**: Built with `rich` to render beautifully styled headers, interactive panel containers, live spinners during API generation, and formatted markdown output with syntax-highlighted Python code.
-- **Robust Error Handling**: Safely handles missing API keys, network issues, and invalid credentials.
+---
 
-## Project Structure
+## 🚀 Features
+
+- 🧠 Powered by **Google Gemini 1.5 Flash**
+- 🔗 Built using **LangChain** for prompt management
+- 🐍 Answers Python programming questions
+- 🛠️ Debugs Python errors with detailed explanations
+- 💡 Explains syntax and programming concepts in simple language
+- ✨ Generates clean and optimized Python code
+- 🎨 Beautiful terminal interface using **Rich**
+- 📄 Markdown rendering with syntax-highlighted code
+- 🔒 Secure API key management using `.env`
+- ⚠️ Handles API and network errors gracefully
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Programming Language |
+| LangChain | LLM Framework |
+| Google Gemini API | AI Language Model |
+| Rich | Terminal User Interface |
+| python-dotenv | Environment Variables |
+
+---
+
+## 📂 Project Structure
+
 ```text
-langchain_project/
- ├── .env                # Environment variables (API Key)
- ├── app.py              # Main application source code
- ├── requirements.txt    # Python dependencies
- └── README.md           # Project documentation
+langchain-chatbot/
+│
+├── app.py              # Main chatbot application
+├── test_bot.py         # Testing file
+├── requirements.txt    # Required dependencies
+├── README.md           # Project documentation
+├── .env.example        # Sample environment variables
+└── .gitignore
 ```
 
-## Setup Instructions
+---
 
-### 1. Clone/Navigate to the Directory
-Ensure you are in the project folder:
+## ⚙️ Installation
+
+### 1. Clone the repository
+
 ```bash
 git clone https://github.com/Shivanandana138/langchain-chatbot.git
+
 cd langchain-chatbot
 ```
 
-### 2. Create and Activate Virtual Environment
-Create a virtual environment:
-```powershell
+### 2. Create a virtual environment
+
+```bash
 python -m venv .venv
 ```
-Activate it:
-- **PowerShell (Windows)**:
-  ```powershell
-  .\.venv\Scripts\Activate.ps1
-  ```
-- **Command Prompt (Windows)**:
-  ```cmd
-  .\.venv\Scripts\activate.bat
-  ```
 
-### 3. Install Dependencies
+Activate it
+
+**Windows**
+
+```bash
+.venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+source .venv/bin/activate
+```
+
+### 3. Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure API Key
-1. Obtain an API Key from [Google AI Studio](https://aistudio.google.com/).
-2. Open the `.env` file.
-3. Replace `YOUR_GEMINI_API_KEY` with your actual key:
-   ```env
-   GEMINI_API_KEY=AIzaSy...
-   ```
+---
 
-## Running the Chatbot
-Launch the chatbot:
+## 🔑 Configure API Key
+
+Create a `.env` file in the project directory.
+
+```env
+GEMINI_API_KEY=YOUR_API_KEY
+```
+
+You can obtain a free API key from **Google AI Studio**.
+
+---
+
+## ▶️ Running the Chatbot
+
 ```bash
 python app.py
 ```
 
-Type your Python doubts and press **Enter**. To exit the application, type `exit` or `quit`.
+Start asking your Python programming questions.
 
-## Example Questions Tested
-1. *What is the difference between list and tuple in Python?*
-2. *How does a dictionary comprehension work? Explain with a simple example.*
-3. *Why am I getting a NameError in this code: print(x)?*
-4. *Write a Python function to check if a string is a palindrome.*
-5. *Explain decorator pattern in Python with a real-world example.*
+To exit the chatbot:
+
+```text
+exit
+```
+
+or
+
+```text
+quit
+```
+
+---
+
+## 💬 Example Questions
+
+- What is the difference between a list and a tuple?
+- Explain Python decorators with an example.
+- Why am I getting a NameError?
+- Write a Python program to check for a palindrome.
+- Explain dictionary comprehensions.
+- How do generators work in Python?
+- Optimize this Python function.
+
+---
+
+## 📸 Demo
+
+> Add a screenshot or GIF of your chatbot here.
+
+Example:
+
+```markdown
+![Demo](images/demo.png)
+```
+
+---
+
+## 🎯 Future Improvements
+
+- Conversation memory
+- Multi-language programming support
+- Streamlit/Web interface
+- Voice input
+- Chat history
+- File upload support
+- Multiple AI model support
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+Feel free to fork the repository, improve the project, and submit a pull request.
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a **⭐ Star** on GitHub.
+
+It helps others discover the project and motivates further development.
+
+---
+
+## 👩‍💻 Author
+
+**Shivanandana A**
+
+GitHub: https://github.com/Shivanandana138
+
+---
+
+## 📄 License
+
+This project is intended for educational and learning purposes.
