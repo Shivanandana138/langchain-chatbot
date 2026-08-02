@@ -22,7 +22,8 @@ langchain_project/
 ### 1. Clone/Navigate to the Directory
 Ensure you are in the project folder:
 ```bash
-cd C:\Users\Shivananda\.gemini\antigravity-ide\scratch\langchain_project
+git clone https://github.com/Shivanandana138/langchain-chatbot.git
+cd langchain-chatbot
 ```
 
 ### 2. Create and Activate Virtual Environment
